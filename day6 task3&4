@@ -1,0 +1,37 @@
+
+// 3rd task
+class Person {
+        constructor(firstName, lastName, age, department, email, mobile, city){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.department=department;
+            this.email=email;
+            this.mobile=mobile;
+            this.city = city;
+        }
+}
+
+var detail = new Person("kishorkarthik","M",23,"BE","kishorkarthikmail@gmail.com",74448573376,"salem");
+
+console.log(detail);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// 4th task
+ class UberPrice {
+    constructor(distance, duration, baseFare, costPerMile, costPerMinute) {
+      this.distance = distance;
+      this.duration = duration;
+      this.baseFare = baseFare;
+      this.costPerMile = costPerMile;
+      this.costPerMinute = costPerMinute;
+    }
+  
+    totalPrice() {
+      return this.baseFare + (this.distance * this.costPerMile) + (this.duration * this.costPerMinute);
+    }
+  }
+  
+  const myUber = new UberPrice(5, 10, 60, 14, 2);
+  console.log(myUber.totalPrice());
